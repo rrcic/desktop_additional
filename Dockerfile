@@ -13,7 +13,7 @@ RUN \
     && echo "tom:tom" | chpasswd \
 	&& chmod 777 /etc/init.d/networking
 
-COPY --chown=1000 ./student /home/student/
+### COPY --chown=1000 ./student /home/student/
 	
 USER 1000
 
